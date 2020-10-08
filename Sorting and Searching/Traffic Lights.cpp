@@ -1,4 +1,5 @@
 //Time Limit Exceeding for big test cases. Idk why, this algo is O(nlogn)
+//UPDATE: Code Accepted, Time 0.70 s, std lower_bound is O(n) while set_name.lower_bound is O(log(n))
 #include <bits/stdc++.h>
 #define loop(i,n) for(int i=0;i<n;++i)
 using namespace std;
@@ -16,7 +17,8 @@ int main()
     loop(i,n)
     {
         scanf("%d",&a);
-        itr=lower_bound(traffic.begin(),traffic.end(),a);
+      //  itr=lower_bound(traffic.begin(),traffic.end(),a);
+        itr=traffic.lower_bound(a);
         right=(*itr);
         left= *(--itr);
  
