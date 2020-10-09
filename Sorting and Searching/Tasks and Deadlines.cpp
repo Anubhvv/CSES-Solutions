@@ -10,7 +10,7 @@ int main()
     scanf("%lld",&n);
     loop(i,n){
         scanf("%lld %lld",&a,&d);
-        deadline.insert( make_pair( a , d )); // sorted by d
+        deadline.insert( make_pair( a , d )); // sorted by a
     }
     for(itr=deadline.begin();itr!=deadline.end();++itr)
     {
