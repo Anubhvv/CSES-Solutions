@@ -15,7 +15,6 @@ int main()
          {
              if(j>=coins[i])
                 dp[j]= ( dp[j]+dp[j-coins[i]] )% 1000000007;
-           // cout<<dp[j]<<endl;
          }
     printf("%d",dp[x]);
     
