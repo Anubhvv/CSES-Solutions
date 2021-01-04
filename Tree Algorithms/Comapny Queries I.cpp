@@ -29,6 +29,7 @@ int main()
         }
     }
 
+
     while(q--)
     {
         int k;
